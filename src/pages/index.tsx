@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout";
 import banner from "../assets/banner.png";
+import codeExample from "../assets/code-example.jpg";
 import { colors, responsive } from "../styles";
 
 const SIndexPage = styled.div`
@@ -31,6 +32,11 @@ const SBranding = styled.h1`
   text-align: center;
 `;
 
+const SCallToAction = styled(SBranding)`
+  font-weight: 700;
+  margin: 1em;
+`;
+
 const STagline = styled.h2`
   margin: 30px 0;
   font-size: 30px;
@@ -43,6 +49,9 @@ const SSection = styled.section`
   width: 100%;
   min-height: 600px;
   z-index: 0;
+  & img {
+    width: 100%;
+  }
 `;
 
 const SBannerWrapper = styled.div`
@@ -84,10 +93,19 @@ const IndexPage = (props: any) => (
         <SBranding>WalletConnect</SBranding>
         <STagline>Open protocol for connecting Wallets to Dapps</STagline>
       </SBrandingWrapper>
+
       <SSection>
         <SBannerWrapper>
           <img src={banner} alt="WalletConnect" />
         </SBannerWrapper>
+
+        <SDescriptionWrapper>
+          <SColumn>
+            <SCallToAction>Add to your Dapp today</SCallToAction>
+            <img src={codeExample} alt="code example" />
+          </SColumn>
+        </SDescriptionWrapper>
+
         <SDescriptionWrapper>
           <SColumn>
             <h2>What is WalletConnect?</h2>
