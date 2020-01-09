@@ -2,6 +2,7 @@ import { IApp } from "../helpers/types";
 
 import balance from "../assets/dapps/balance.jpg";
 import uniswap from "../assets/dapps/uniswap.jpg";
+import stablepay from "../assets/dapps/stablepay.jpg";
 import rarible from "../assets/dapps/rarible.png";
 import dydx from "../assets/dapps/dydx.jpg";
 import pooltogether from "../assets/dapps/pooltogether.png";
@@ -132,6 +133,11 @@ const DAPPS: IApp[] = [
     name: "DeFi Saver",
     icon: defisaver,
     url: "https://defisaver.com/"
+  },
+  {
+    name: "StablePay",
+    icon: stablepay,
+    url: "https://stablepay.io/"
   },
   {
     name: "HelioWallet",
